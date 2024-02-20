@@ -8,6 +8,8 @@ authors = ["codnstj <mail@chaewoon.me>"]
 python = "^3.10"
 boto3 = "chalice"
 chalice = "^1.30.0"
+cookiecutter = "^2.5.0"
+pytest = "^8.0.1"
 
 [tool.poetry.dev-dependencies]
 
