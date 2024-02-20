@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lambda_integrate"
+version = "0.1.0"
+description = "Using Chalice with RDS, SQS, SNS"
+authors = ["codnstj <mail@chaewoon.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "chalice"
+chalice = "^1.30.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
