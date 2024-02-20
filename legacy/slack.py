@@ -39,10 +39,10 @@ class SlackAPI:
 
 def receive_and_process_sqs_messages():
     # SQS 큐 URL 설정
-    sqs_queue_url = 'https://sqs.ap-northeast-2.amazonaws.com/402010684322/SQS-Autoscaling-test.fifo'
+    sqs_queue_url = ''
 
     aws_region = 'ap-northeast-2'
-    token = "xoxb-5996212519252-6218364307303-ZaLh3ihuGx6ZQ0W8uLG9LRQY"
+    token = ""
 
     # Slack Configure
     slack = SlackAPI(token)
