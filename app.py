@@ -13,6 +13,11 @@ def get_app_db():
     return _DB
 
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return {"this server is": "Healthy"}
+
+
 @app.route('/todos', methods=['GET'])
 def get_todos():
     return get_app_db().list_items()
