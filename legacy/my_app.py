@@ -3,7 +3,7 @@ from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 from aws_xray_sdk.core import patcher, xray_recorder
 
 import requests
-import slack
+from chalicelib import slack
 
 patcher.patch(('requests',))
 app = Flask(__name__)

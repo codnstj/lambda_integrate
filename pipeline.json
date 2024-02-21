@@ -2,7 +2,7 @@
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "ApplicationName": {
-      "Default": "lambda_integrate",
+      "Default": "lambdaintegrate",
       "Type": "String",
       "Description": "Enter the name of your application"
     },
