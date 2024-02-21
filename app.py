@@ -1,5 +1,6 @@
 from chalice import Chalice
 from chalicelib import db
+import requests
 
 app = Chalice(app_name='mytodo')
 app.debug = True
@@ -11,6 +12,12 @@ def get_app_db():
     if _DB is None:
         _DB = db.InMemoryTodoDB()
     return _DB
+
+
+@app.route('/', methods=['GET'])
+def hello_world():
+    resp = requests.get('https://chaewoon.me')
+    return 'hello, chaewoon: %s' % resp.url
 
 
 @app.route('/health', methods=['GET'])
