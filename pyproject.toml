@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "lambda_integrate"
+name = "lambdaintegrate"
 version = "0.1.0"
 description = "Using Chalice with RDS, SQS, SNS"
 authors = ["codnstj <mail@chaewoon.me>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-boto3 = "chalice"
+boto3 = "^1.34.0"
 chalice = "^1.30.0"
 cookiecutter = "^2.5.0"
 pytest = "^8.0.1"
