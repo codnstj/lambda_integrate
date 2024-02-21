@@ -3,7 +3,6 @@ import json
 import time
 import random
 from slack_sdk import WebClient
-from ec2_metadata import ec2_metadata
 
 
 class SlackAPI:
@@ -74,8 +73,7 @@ def receive_and_process_sqs_messages():
                 # 메시지 처리 (여기서는 간단히 출력만 함)
                 body = json.loads(message['Body'])
                 nowtime = time.time()
-                ec2_id = ec2_metadata.instance_id
-                sqs_body = f"Received message: {body}\n" + f"time : {nowtime}\n" + f"ec2 : {ec2_id}\n\n"
+                sqs_body = f"Received message: {body}\n" + f"time : {nowtime}\n\n"
                 print(sqs_body)
                 print(nowtime)
 
