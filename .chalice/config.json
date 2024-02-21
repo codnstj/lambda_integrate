@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "app_name": "lambda_integrate",
+  "app_name": "lambdaintegrate",
   "stages": {
     "dev": {
       "api_gateway_stage": "api"
