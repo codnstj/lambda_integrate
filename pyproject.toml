@@ -10,6 +10,7 @@ boto3 = "chalice"
 chalice = "^1.30.0"
 cookiecutter = "^2.5.0"
 pytest = "^8.0.1"
+slack-sdk = "^3.27.0"
 
 [tool.poetry.dev-dependencies]
 
