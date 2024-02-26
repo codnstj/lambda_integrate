@@ -163,6 +163,7 @@ cython_debug/
 # Project
 .chalice/deployments/
 .chalice/venv/
+.chalice/config.json
 
 
 .direnv/
